@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather and Crime</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light"><img src="weather_image.png" class="mr-2"><a
+            class="navbar-brand" href="#">Crime and the Weather</a><button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="NYC_data_page.html">New York</a></li>
+                <li class="nav-item"><a class="nav-link" href="CHI_data_page.html">Chicago</a></li>
+                <li class="nav-item"><a class="nav-link" href="Overall_page.html">Overall</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="NYC_data_page.html">NYC</a><a
+                            class="dropdown-item" href="CHI_data_page.html">CHI</a><a class="dropdown-item"
+                            href="index.html">Home</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="bsr-wrapper">
+        <div id='carousel-ID' class='carousel slide' data-ride='carousel' data-interval='5000'>
+            <div class='carousel-inner'>
+                <div class='carousel-item active'><img src='LA_Header.jpg' class='d-block w-100' alt='carousel image'>
+                </div>
+            </div>
+        </div>
+        <h1>La La Land</h1>
+        <p>You hop off the plane at LAX with a dream and your cardigan. The first thing you notice is that the weather is nice year round!
+            Sometimes it does not feel fair to people living in the other major US cities that go through extreme winters, but Souther California's mild weather
+            makes itself known in the crime data. There are almost no correlations between crime and any type of weather, partially, because their really is only one type of weather.
+        </p>
+        <div class='my-5'></div>
+       <h4 style = 'text-align: center;'>Crime and Temperature Correlation</h4>
+            <embed src="./total_la_scatter.html" type="text/html" height="700" width="1000"
+                 />
+                <h4 style = 'text-align: center;'>Box Plot with Conditions and Crime Rate</h4>
+            <embed src="./la_conditions_box.html" type="text/html" height="700" width="1000"
+                 />
+                 <h4 style = 'text-align: center;'>UV Index and Crime Correlation</h4>
+            <embed src="./la_uv_scatter.html" type="text/html" height="700" width="1000"
+                style='margin-left: auto; margin-right: auto;' />
+        <div class='py-3 my-4'></div>
+        <h5>Crime Severity in LA</h5>
+        <p>When separated into violent and non violent crimes there is no correlation between the temperature and crime in Los Angeles. Our hypothesis is that since the 
+            temperature is much more static in Los Angeles than either of our other cities, there was not enough fluctuation in temperature to make 
+            a meaningful difference in crime.</p>
+            <h4 style = 'text-align: center;'>Non Violent Crime</h4>
+            <embed src="./nonviolent_la_scatter.html" type="text/html" height="700" width="1000"
+                style='margin-left: auto; margin-right: auto;' />
+            <h4 style ='text-align: center;'>Violent Crime</h4>
+            <embed src="./violent_la_scatter.html" type="text/html" height="700" width="1000"
+                style='margin-left: auto; margin-right: auto;' />
+            <h4>Conclusions</h4>
+            <p>The mild weather of Southern California completely shifts the overall crime data for our entire original data set. The consistant weather in Los Angeles
+                midigated any effects that Chicago or New York could have had on our data because there is a such a small sample size of bad weather. I guess when it is always beutiful
+                out there is no reason to commit crimes. 
+            </LAbel></p>
+        <div class='py-3 my-5'></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" data-toggle="tab">Home Page</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://lasd.org/transparency/part1and2crimedata/#part2" data-toggle="tab">LA Crime Data</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.visualcrossing.com/weather-query-builder/LosAngeles/?v=wizard" data-toggle="tab">LA Weather Data</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <div class="tab-content" id="tab-Contentundefined">
+                    <div class="mt-3 ml-2 tab-pane fade show active" id="panel30022848" role="tabpanel"
+                        aria-labelledby="...">
+                        <h5>Sources</h5>
+                        <p>Follow these links by right clicking in order to find where we sourced our data.</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel7877437" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 2</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel83325284" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 3</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel8660850" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 4</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel93517365" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 5</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel57640553" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 6</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel46038090" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 7</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                    <div class="mt-3 ml-2 tab-pane fade" id="panel71917045" role="tabpanel" aria-labelledby="...">
+                        <h5>Content Area 8</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
